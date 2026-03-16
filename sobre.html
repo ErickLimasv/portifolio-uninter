@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#A7C957" />
+    <meta
+      name="description"
+      content="Portfólio de Erick Lima, desenvolvedor web."
+    />
+    <meta name="color-scheme" content="light dark" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./sobre.css"/>
+
+    <title>Erick Lima - Portfólio</title>
+    <link rel="icon" href="./Imagens/Logo/logo.svg">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="mobile-menu">
+                <ul class="navbar-items">
+                    <li class="navbar-item logo"><a href="./"><img src="./Imagens/logo/logo-curto.svg"></a></li> 
+                </ul>
+
+                <img onclick="toggleMobileMenu()" id="button-menu" src="./Imagens/Icones/menu.svg" alt="Menu">
+            </div>
+
+            <ul class="navbar-items" id="mobile-menu-items">
+                <li class="navbar-item active"><a href="./sobre.html"><img class="icon" src="./Imagens/Icones/sobre-mim.svg">Sobre mim</a></li>
+                <li class="navbar-item"><a href="./portfolio.html"><img class="icon" src="./Imagens/Icones/portfolio.svg">Portfólio</a></li>
+                <li class="navbar-item"><a href="./formacao.html"><img class="icon" src="./Imagens/Icones/formacao.svg">Formação</a></li>
+                <li class="navbar-item"><a href="./contato.html"><img class="icon" src="./Imagens/Icones/contato.svg">Contato</a></li>
+            </ul>
+        </nav>
+
+        <img src="./Imagens/Logo/black.svg" alt="Logo" class="header-img">
+    </header>
+
+    <nav class="section-nav">
+        <hr>
+        <ul class="section-nav-items">
+            <li class="section-nav-item"><a href="#about-me">informações</a></li>
+            <li class="section-nav-item"><a href="#serie-favorita">série favorita</a></li>
+            <li class="section-nav-item"><a href="#jogo-favorito">jogo favorito</a></li>
+            <li class="section-nav-item"><a href="#livro-favorito">livro favorito</a></li>
+            <li class="section-nav-item"><a href="#musica-favorita">música favorita</a></li>
+            <li class="section-nav-item"><a href="#hobbie">hobbie</a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <div class="section-container">
+        <section id="about-me">
+            <div class="polaroid">
+                <img class="polaroid-img" src="./Imagens/eu.jpg" alt="">
+                <div class="polaroid-text">
+                    <p>Erick Lima</p>
+                    <p class="idade"></p>
+                </div>
+            </div>
+            <article class="about-me-text">
+                <p>
+                    Olá! Meu nome é <b>Erick Lima da Silva</b> e tenho <b>22 anos.</b><br/>
+                    Nasci em Francisco Morato - SP.<br/>
+                    <br/>
+                    <b>Seja BEM VINDO ao meu site!</b><br/>
+                    Fico feliz em mostrar um pouco sobre mim ;)
+                </p>
+
+                <button class="button"><a href="#introduction">Vamos começar!</a></button>
+            </article>
+        </section>
+
+        <section id="introduction">
+            <p class="introduction-text">
+                Acredito que para conhecer alguém é necessário saber os gostos pessoais.<br>
+                Portanto a seguir eu mostro a minha série, jogo, livro e música favorita, além do meu “hobbie”.
+            </p>
+        </section>
+
+        <section id="serie-favorita" class="about-me-content">
+            <article class="content">
+                <div class="content-container">
+                    <h1 class="content-title">Série Favorita</h1>
+                    <p class="content-text">
+                        Quando me pedem uma série para recomendar <b>Arcane é sempre a primeira que vem em mente!</b><br>
+                        Apesar de nunca ter jogado League Of Legends (famoso LOL), adorei a série e sua história.<br>
+                        <br>
+                        O que mais me cativou foi a parte técnica/artística. <b>Cada música, cena e sequência...</b> todas pensadas minunciosamente para transmitir um sentimento único.<br>
+                        <br>
+                        Para mim, <b>Arcane não é apenas uma série, é uma obra de arte!</b>
+                    </p>
+                </div>
+                
+                <span class="content-details">Produzida por Riot Games e Fortiche em 2021.<br>Disponível na Netflix.</span>
+            </article>
+            
+            <div class="polaroid">
+                <img class="polaroid-img" src="./Imagens/arcane.jpg" alt="Arcane">
+                <div class="polaroid-text">
+                    <p>Arcane</p>
+                    <p>Riot games</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="jogo-favorito" class="about-me-content">
+            <article class="content">
+                <div class="content-container">
+                    <h1 class="content-title">Jogo Favorito</h1>
+                    <p class="content-text">
+                        Se tem um jogo que me <b>impressionou em todos os aspectos foi Death Stranding!</b><br>
+                        <br>
+                        Mesmo não sendo um jogo “Multiplayer” você nunca se sente sozinho, pois <b>é possível interagir e colaborar com outros jogadores de uma forma única.</b><br>
+                        <br>
+                        Kojima não economizou e <b>juntou diversos atores de grandes séries e filmes</b>, como Norman Reedus e Mads Mikkelsen que são conhecidos por atuarem nas séries The Walking Dead e Hannibal, respectivamente.<br>
+                        <br>
+                        Como também, a dublagem em “PT-BR” está impecável.
+                    </p>
+                </div>
+                
+                <span class="content-details">Produzido por Kojima Productions em 2019.<br>Disponível para PlayStation 4/5, Xbox e PC.</span>
+            </article>
+            
+            <div class="polaroid">
+                <img class="polaroid-img" src="./Imagens/death-stranding.jpg" alt="Death Stranding">
+                <div class="polaroid-text">
+                    <p>Death stranding</p>
+                    <p>Kojima Productions</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="livro-favorito" class="about-me-content">
+            <article class="content">
+                <div class="content-container">
+                    <h1 class="content-title">Livro Favorito</h1>
+                    <p class="content-text">
+                        Eu nunca fui muito fã de ler, mas <b>"Relatos De Um Gato Viajante" conseguiu algo que nenhum outro livro conseguiu</b>, me prender do começo ao fim.<br>
+                        <br>
+                        O que eu mais gostei nesse livro foi a forma de retratar o gato como um dos narradores da história, porque ele <b>tem um “humor ácido” assim como imaginamos que um gato tenha.</b> Um exemplo é o trecho:<br>
+                        ”O ser humano é uma criatura arrogante demais para quem não passa de um macaco gigante que sabe andar ereto.”
+                    </p>
+                </div>
+                
+                <span class="content-details">Escrito por Hiro Arikawa em 2017 e traduzido por Rita Kohl.<br>Distribuído no Brasil pela editora Alfaguara.</span>
+            </article>
+            
+            <div class="polaroid">
+                <img class="polaroid-img" src="./Imagens/gato-viajante.jpg" alt="Relatos de um gato viajante">
+                <div class="polaroid-text">
+                    <p>Relatos de um gato viajante</p>
+                    <p>Hiro Arikawa</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="musica-favorita" class="about-me-content">
+            <article class="content">
+                <div class="content-container">
+                    <h1 class="content-title">Música Favorita</h1>
+                    <p class="content-text">
+                        Prévia da música no Spotify:
+                    </p>
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5aMEnuoXhRXgWCaJwrYVhh?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                
+                <span class="content-details">Produzida por Siamés em 2019 com a participação de Barbie Williams.<br>Faz parte do álbum "Home" lançado em 2020.</span>
+            </article>
+            
+            <div class="polaroid">
+                <img class="polaroid-img" src="./Imagens/summer-nights.jpg" alt="Summer Nights">
+                <div class="polaroid-text">
+                    <p>Summer Nights</p>
+                    <p>Siamés</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hobbie" class="about-me-content">
+            <div class="hobbie-container-left">
+                <article class="content">
+                    <div class="content-container">
+                        <h1 class="content-title">"hobbie"</h1>
+                        <p class="content-text">
+                            Eu gosto de tirar fotos como Hobbie pois acredito que através delas conseguimos transmitir um pouco de nós mesmos.<br>
+                            <br>
+                            Portanto estou compartilhando com você umas das melhores fotos que eu tirei ;)
+                        </p>
+                    </div>
+                </article>
+
+                <div class="polaroid">
+                    <img class="polaroid-img" src="./Imagens/foto-2.png" alt="">
+                    <div class="polaroid-text">
+                        <p>10/11/2024</p>
+                    </div>
+                </div>
+
+                <div class="polaroid">
+                    <img class="polaroid-img" src="./Imagens/foto-4.png" alt="">
+                    <div class="polaroid-text">
+                        <p>25/01/2026</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hobbie-container-right">
+                <div class="polaroid">
+                    <img class="polaroid-img" src="./Imagens/foto-1.png" alt="">
+                    <div class="polaroid-text">
+                        <p>15/10/2024</p>
+                    </div>
+                </div>
+
+                <div class="polaroid">
+                    <img class="polaroid-img" src="./Imagens/foto-3.png" alt="">
+                    <div class="polaroid-text">
+                        <p>16/03/2022</p>
+                    </div>
+                </div>
+
+                <div class="polaroid">
+                    <img class="polaroid-img" src="./Imagens/foto-5.png" alt="">
+                    <div class="polaroid-text">
+                        <p>29/12/2023</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <h4>Estrutura do site</h4>
+                <div class="sitemap">
+                    <a href="./">Início</a>
+                    <a href="./sobre.html">Sobre mim</a>
+                    <a href="./portfolio.html">Portfólio</a>
+                    <a href="./formacao.html">Formação</a>
+                    <a href="./contato.html">Contato</a>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <div class="developed-by">
+                    <p>Site desenvolvido por:</p>
+                    <h4>Erick Lima</h4>
+                </div>
+                <div class="project-link">
+                    <p>Acesse a página do projeto no:</p>
+                    <button class="button"><a href=""><img class="icon" src="./Imagens/Icones/github.svg" alt="Github">Github</a></button>
+                </div>
+            </div>
+
+            <div class="footer-content">
+                <h4>redes sociais</h4>
+                <div class="social-media">
+                    <button class="button linkedin"><a href="https://www.linkedin.com/in/ericklds/"><img class="icon" src="./Imagens/Icones/linkedin.svg" alt="LinkedIn"></a></button>
+                    <button class="button instagram"><a href="https://www.instagram.com/erick_limasv/"><img class="icon" src="./Imagens/Icones/instagram.svg" alt="Instagram"></a></button>
+                    <button class="button github"><a href="https://github.com/ErickLimasv"><img class="icon" src="./Imagens/Icones/github-white.svg" alt="Github"></a></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright">
+        <p>© 2026 Erick Lima. As imagens e marcas exibidas são de propriedade de seus respectivos autores e estúdios.</p>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

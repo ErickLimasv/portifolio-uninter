@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
 
     <title>Erick Lima - Portfólio</title>
     <link rel="icon" href="./Imagens/Logo/logo.svg">
@@ -23,14 +23,13 @@
     <header class="header">
         <nav class="navbar">
             <div class="mobile-menu">
-                <ul class="navbar-items">
-                    <li class="navbar-item logo"><a href="./"><img src="./Imagens/logo/logo-curto.svg"></a></li> 
-                </ul>
+                <img id="logo" src="./Imagens/logo/logo-curto.svg">
 
                 <img onclick="toggleMobileMenu()" id="button-menu" src="./Imagens/Icones/menu.svg" alt="Menu">
             </div>
-            
+
             <ul class="navbar-items" id="mobile-menu-items">
+                <li class="navbar-item"><a href="./"><img class="icon" src="./Imagens/Icones/home.svg">Início</a></li>
                 <li class="navbar-item"><a href="./sobre.html"><img class="icon" src="./Imagens/Icones/sobre-mim.svg">Sobre mim</a></li>
                 <li class="navbar-item"><a href="./portfolio.html"><img class="icon" src="./Imagens/Icones/portfolio.svg">Portfólio</a></li>
                 <li class="navbar-item"><a href="./formacao.html"><img class="icon" src="./Imagens/Icones/formacao.svg">Formação</a></li>
@@ -61,16 +60,16 @@
                 </div>
                 <div class="project-link">
                     <p>Acesse a página do projeto no:</p>
-                    <button class="button"><a href=""><img class="icon" src="./Imagens/Icones/github.svg" alt="Github">Github</a></button>
+                    <button class="button"><a href="https://github.com/ErickLimasv/portifolio-uninter" target="_blank" rel="noopener"><img class="icon" src="./Imagens/Icones/github.svg" alt="Github" >Github</a></button>
                 </div>
             </div>
 
             <div class="footer-content">
                 <h4>redes sociais</h4>
                 <div class="social-media">
-                    <button class="button linkedin"><a href="https://www.linkedin.com/in/ericklds/"><img class="icon" src="./Imagens/Icones/linkedin.svg" alt="LinkedIn"></a></button>
-                    <button class="button instagram"><a href="https://www.instagram.com/erick_limasv/"><img class="icon" src="./Imagens/Icones/instagram.svg" alt="Instagram"></a></button>
-                    <button class="button github"><a href="https://github.com/ErickLimasv"><img class="icon" src="./Imagens/Icones/github-white.svg" alt="Github"></a></button>
+                    <button class="button linkedin"><a href="https://www.linkedin.com/in/ericklds/" target="_blank" rel="noopener"><img class="icon" src="./Imagens/Icones/linkedin.svg" alt="LinkedIn"></a></button>
+                    <button class="button instagram"><a href="https://www.instagram.com/erick_limasv/" target="_blank" rel="noopener"><img class="icon" src="./Imagens/Icones/instagram.svg" alt="Instagram"></a></button>
+                    <button class="button github"><a href="https://github.com/ErickLimasv" target="_blank" rel="noopener"><img class="icon" src="./Imagens/Icones/github-white.svg" alt="Github"></a></button>
                 </div>
             </div>
         </div>

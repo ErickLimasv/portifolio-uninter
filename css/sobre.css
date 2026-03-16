@@ -1,0 +1,252 @@
+.section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    margin-bottom: 114px;
+}
+
+section {
+    flex-wrap: wrap;
+}
+
+section#about-me {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+    margin-top: 64px;
+}
+
+section#about-me .polaroid {
+    transform: rotate(-2deg);
+}
+
+.polaroid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 16px;
+    background-color: var(--primary);
+    border: 1px solid var(--black);
+    box-shadow: 4px 4px 0px var(--black);
+}
+
+.polaroid-img {
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 1px solid var(--black);
+}
+
+.polaroid-text {
+    text-transform: uppercase;
+}
+
+.polaroid-text p {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.about-me-text {
+    padding: 16px 0;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.about-me-text .button {
+    background-color: #3D61C2;
+}
+
+section .introduction-text {
+    max-width: 400px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+section.about-me-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 48px;
+    max-width: 800px;
+    width: 100%;
+}
+
+section.about-me-content .polaroid {
+    width: 300px;
+}
+
+section.about-me-content .polaroid-img {
+    width: 100%;
+    aspect-ratio: unset;
+}
+
+section.about-me-content .polaroid-text {
+    align-items: center;
+}
+
+section.about-me-content .polaroid-text p {
+    color: var(--white);
+    font-weight: 400;
+}
+
+.about-me-content#serie-favorita .polaroid {
+    background-color: #691629;
+}
+
+.about-me-content#jogo-favorito .polaroid {
+    background-color: #354F5C;
+}
+
+.about-me-content#livro-favorito .polaroid {
+    background-color: #F4532C;
+}
+
+.about-me-content#musica-favorita .polaroid {
+    background-color: #5D8585;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 8px 0;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-title {
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.content-text, .content-text b {
+    font-size: 18px;
+    max-width: 400px;
+}
+
+.content-details {
+    font-weight: 400;
+    max-width: 400px;
+}
+
+.hobbie-container-right .polaroid:nth-child(1) {
+    background-color: #4065A1;
+}
+
+.hobbie-container-left .polaroid:nth-child(2) {
+    background-color: #CC7619;
+}
+
+.hobbie-container-right .polaroid:nth-child(2) {
+    background-color: #B33E4D;
+}
+
+.hobbie-container-left .polaroid:nth-child(3) {
+    background-color: #5D5A94;
+}
+
+.hobbie-container-right .polaroid:nth-child(3) {
+    background-color: #466B35;
+}
+
+section#hobbie .polaroid-img {
+    aspect-ratio: 1 / 1;
+}
+
+section#hobbie .polaroid-text p {
+    text-align: right;
+}
+
+.hobbie-container-left, .hobbie-container-right {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.hobbie-container-right .polaroid:nth-child(even) {
+    transform: rotate(6deg);
+}
+
+.hobbie-container-right .polaroid:nth-child(odd) {
+    transform: rotate(-6deg);
+}
+
+.hobbie-container-left .polaroid:nth-child(even) {
+    transform: rotate(-6deg);
+}
+
+.hobbie-container-left .polaroid:nth-child(odd) {
+    transform: rotate(6deg);
+}
+
+@media screen and (max-width: 950px) {
+    section#about-me, section.about-me-content, section#introduction {
+        max-width: 90%;
+        padding: 0px 16px;
+    }
+
+    section#about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-me-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    section#about-me .polaroid {
+        max-width: 290px;
+    }
+
+    section.about-me-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 48px;
+    }
+
+    section.about-me-content#hobbie {
+        flex-direction: column;
+        gap: 72px;
+    }
+
+    .hobbie-container-left, .hobbie-container-right {
+        align-items: center;
+    }
+
+    section.about-me-content .polaroid {
+        width: 100%;
+    }
+
+    .content {
+        justify-content: flex-start;
+    }
+
+    .polaroid-img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 951px) {
+    section.about-me-content:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}

@@ -17,9 +17,7 @@ function transformarMilisegundosEmAnos(milisegundos) {
 }
 
 function toggleMobileMenu() {
-    console.log("oi")
     mobileMenu.style.display = mobileMenu.style.display == "flex" ? "none" : "flex";
-    console.log(mobileMenu.style.display)
 }
 
 document.addEventListener("click", (event) => {

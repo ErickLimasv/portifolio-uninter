@@ -51,6 +51,7 @@ img {
     justify-content: space-between;
     max-width: 1200px;
     width: 100%;
+    background-color: #E5D6B2;
 }
 
 .navbar-items {
@@ -86,6 +87,7 @@ img {
     cursor: pointer;
     border: 1px solid transparent;
     transition: transform .2s cubic-bezier(0,.7,.2,2) 0s;
+    border-radius: 8px;
 }
 
 .navbar-item a {
@@ -153,7 +155,18 @@ img {
     transition: all .2s cubic-bezier(0,.7,.2,2) 0s;
 }
 
-.button p, .button a {
+.button:not(:has(a)) {
+    color: var(--white);
+    font-weight: 700;
+    padding: 10px 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.button a {
     color: var(--white);
     font-weight: 700;
     padding: 10px 32px;
@@ -310,7 +323,6 @@ img {
 .social-media {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-self: center;
     gap: 16px;
 }

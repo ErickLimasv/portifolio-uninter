@@ -155,7 +155,7 @@ article#projeto-sobre-da-vinci .button {
 }
 
 article#projeto-sobre-mongodb .button {
-    background-color: #449B45;
+    background-color: #318132;
 }
 
 .projeto-img {
@@ -184,7 +184,7 @@ article#projeto-sobre-mongodb .button {
     margin-top: 48px;
 }
 
-.projeto-tecnologias h4 {
+.projeto-tecnologias h2 {
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 8px;
@@ -223,7 +223,7 @@ article#projeto-sobre-mongodb .button {
     margin-top: 48px;
     font-weight: 400;
     text-transform: capitalize;
-    opacity: .6;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1100px) {

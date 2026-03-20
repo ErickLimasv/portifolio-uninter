@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#A7C957" />
     <meta
       name="description"
-      content="Portfólio de Erick Lima, desenvolvedor web."
+      content="Portfólio de Erick Lima, apresentando um pouco sobre mim, meus gostos pessoais e meus projetos. Site desenvolvido para um trabalho da materia de 'Fundamentos da Programação Web' da Uninter."
     />
     <meta name="color-scheme" content="light dark" />
 
+    <!-- Fonte 'Rajdhani' do Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/contato.css"/>
 
@@ -22,29 +23,33 @@
 </head>
 <body>
     <header class="header">
+
+        <!-- Menu -->
         <nav class="navbar">
             <div class="mobile-menu">
-                <img id="logo" src="./imagens/logo/logo-curto.svg">
+                <img id="logo" src="./imagens/logo/logo-curto.svg" alt="Logo">
 
                 <img onclick="toggleMobileMenu()" id="button-menu" src="./imagens/icones/menu.svg" alt="Menu">
             </div>
 
             <ul class="navbar-items" id="mobile-menu-items">
-                <li class="navbar-item"><a href="./"><img class="icon" src="./imagens/icones/home.svg">Início</a></li>
-                <li class="navbar-item"><a href="./sobre.html"><img class="icon" src="./imagens/icones/sobre-mim.svg">Sobre mim</a></li>
-                <li class="navbar-item"><a href="./portfolio.html"><img class="icon" src="./imagens/icones/portfolio.svg">Portfólio</a></li>
-                <li class="navbar-item"><a href="./formacao.html"><img class="icon" src="./imagens/icones/formacao.svg">Formação</a></li>
-                <li class="navbar-item active"><a href="./contato.html"><img class="icon" src="./imagens/icones/contato.svg">Contato</a></li>
+                <li class="navbar-item"><a href="./"><img class="icon" src="./imagens/icones/sobre-mim.svg" alt="Icone de Pessoa">Sobre mim</a></li>
+                <li class="navbar-item"><a href="./portfolio.html"><img class="icon" src="./imagens/icones/portfolio.svg" alt="Icone de Portfólio">Portfólio</a></li>
+                <li class="navbar-item"><a href="./formacao.html"><img class="icon" src="./imagens/icones/formacao.svg" alt="Icone de Formação">Formação</a></li>
+                <li class="navbar-item active"><a href="./contato.html"><img class="icon" src="./imagens/icones/contato.svg" alt="Icone de Contato">Contato</a></li>
             </ul>
         </nav>
 
-        <img src="./imagens/logo/black.svg" alt="Logo" class="header-img">
+        <!-- Banner -->
+        <img fetchpriority=high src="./imagens/logo/black.svg" alt="Banner" class="header-img">
     </header>
 
-    <section>
+    <main>
         <p class="section-call">Me mande uma mensagem! ;)</p>
 
-        <div class="contact-container">
+        <section class="contact-container">
+
+            <!-- Formulário de contato -->
             <form action="" id="contact">            
                 <fieldset form="contact">
                     <label for="nome">Nome:</label>
@@ -60,61 +65,67 @@
                 <button type="submit" class="button" id="form-button">Enviar mensagem!</button>
             </form>
 
-            <div class="contact-social-media">
+            <!-- Links das redes sociais -->
+            <article class="contact-social-media">
                 <div class="contact-social-media-text">
                     <h4>Caso prefira,</h4>
                     <p>Pode entrar em contato comigo pelas redes sociais! Ficarei feliz em receber sua mensagem.</p>
                 </div>
                 <div class="social-media">
                     <button class="button linkedin"><a href="https://www.linkedin.com/in/ericklds/" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/linkedin.svg" alt="LinkedIn"></a></button>
+                    <button class="button whatsapp"><a href="https://wa.me/5511974910301" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/whatsapp-white.svg" alt="WhatsApp"></a></button>
                     <button class="button instagram"><a href="https://www.instagram.com/erick_limasv/" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/instagram.svg" alt="Instagram"></a></button>
                     <button class="button github"><a href="https://github.com/ErickLimasv" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/github-white.svg" alt="Github"></a></button>
                 </div>
-            </div>
-        </div>
-
-
-    </section>
+            </article>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-container">
+
+            <!-- Estrutura do site -->
             <div class="footer-content">
-                <h4>Estrutura do site</h4>
+                <h1>Estrutura do site</h1>
                 <div class="sitemap">
-                    <a href="./">Início</a>
-                    <a href="./sobre.html">Sobre mim</a>
+                    <a href="./">Sobre mim</a>
                     <a href="./portfolio.html">Portfólio</a>
                     <a href="./formacao.html">Formação</a>
                     <a href="./contato.html">Contato</a>
                 </div>
             </div>
 
+            <!-- Desenvolvido por -->
             <div class="footer-content">
                 <div class="developed-by">
                     <p>Site desenvolvido por:</p>
-                    <h4>Erick Lima</h4>
+                    <h1>Erick Lima</h1>
                 </div>
                 <div class="project-link">
                     <p>Acesse a página do projeto no:</p>
-                    <button class="button"><a href="https://github.com/ErickLimasv/portifolio-uninter" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/github.svg" alt="Github" >Github</a></button>
+                    <button class="button"><a href="https://github.com/ErickLimasv/portifolio-uninter" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/github.svg" alt="Icone Github" >Github</a></button>
                 </div>
             </div>
 
+            <!-- Redes sociais -->
             <div class="footer-content">
-                <h4>redes sociais</h4>
+                <h1>redes sociais</h1>
                 <div class="social-media">
-                    <button class="button linkedin"><a href="https://www.linkedin.com/in/ericklds/" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/linkedin.svg" alt="LinkedIn"></a></button>
-                    <button class="button instagram"><a href="https://www.instagram.com/erick_limasv/" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/instagram.svg" alt="Instagram"></a></button>
-                    <button class="button github"><a href="https://github.com/ErickLimasv" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/github-white.svg" alt="Github"></a></button>
+                    <button class="button linkedin"><a href="https://www.linkedin.com/in/ericklds/" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/linkedin.svg" alt="Icone LinkedIn"></a></button>
+                    <button class="button whatsapp"><a href="https://wa.me/5511974910301" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/whatsapp-white.svg" alt="Icone WhatsApp"></a></button>
+                    <button class="button instagram"><a href="https://www.instagram.com/erick_limasv/" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/instagram.svg" alt="Icone Instagram"></a></button>
+                    <button class="button github"><a href="https://github.com/ErickLimasv" target="_blank" rel="noopener"><img class="icon" src="./imagens/icones/github-white.svg" alt="Icone Github"></a></button>
                 </div>
             </div>
         </div>
     </footer>
+
     <div class="copyright">
         <p>© 2026 Erick Lima. As imagens e marcas exibidas são de propriedade de seus respectivos autores e estúdios.</p>
     </div>
-
-    <script src="./script.js"></script>
-    <script src="./js/contact.js"></script>
+    
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+    <script src="./js/contato.js"></script>
 </body>
 </html>

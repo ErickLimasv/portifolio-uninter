@@ -110,11 +110,11 @@ section.about-me-content .polaroid-text p {
 }
 
 .about-me-content#livro-favorito .polaroid {
-    background-color: #F4532C;
+    background-color: #B83414;
 }
 
 .about-me-content#musica-favorita .polaroid {
-    background-color: #5D8585;
+    background-color: #3A7878;
 }
 
 .content {
@@ -152,7 +152,7 @@ section.about-me-content .polaroid-text p {
 }
 
 .hobbie-container-left .polaroid:nth-child(2) {
-    background-color: #CC7619;
+    background-color: #C2570A;
 }
 
 .hobbie-container-right .polaroid:nth-child(2) {
@@ -195,6 +195,27 @@ section#hobbie .polaroid-text p {
 
 .hobbie-container-left .polaroid:nth-child(odd) {
     transform: rotate(6deg);
+}
+
+.portfolio-call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+.portfolio-call p {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.portfolio-call .button {
+    background-color: #3D61C2;
 }
 
 @media screen and (max-width: 1100px) {
@@ -260,5 +281,10 @@ section#hobbie .polaroid-text p {
 @media screen and (max-width: 450px) {
     section.about-me-content .polaroid {
         width: 100%;
+    }
+
+    .portfolio-call {
+        width: 90%;
+        padding: 0px 16px;
     }
 }
